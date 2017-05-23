@@ -1,0 +1,15 @@
+{
+    "lang": "en",
+    "name": "Abbey",
+    "description": "Abbey is a sort of simulation of a brewery. To be more specific, of an abbey.",
+    "icons": [{
+    "src": "icons/a.ico",
+    "sizes": "100x114",
+    "type": "image/ico"
+}],
+    "start_url": "index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#b06c3d",
+    "background_color": "#FAEBD7"
+}

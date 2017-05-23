@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Nicolas Floréal">
+    <title>Abbey | Login</title>
+    <link href="assets/icons/a.ico" rel="icon" type="image/ico"/>
+    <link rel="stylesheet" href="assets/lib/font-awesome/css/font-awesome.min.css"/>
+    <link href="assets/css/uikit.css" type="text/css" rel="stylesheet"/>
+    <link href="assets/css/uikit.min.css" type="text/css" rel="stylesheet"/>
+    <link href="assets/css/uikit-rtl.css" type="text/css" rel="stylesheet"/>
+    <link href="assets/css/uikit-rtl.min.css" type="text/css" rel="stylesheet"/>
+    <link href="assets/css/screen.css" rel="stylesheet" type="text/css"/>
+    <link rel="manifest" href="assets/manifest/manifest.json"/>
+</head>
+<body>
+
+<div id="loginScreen" class="container">
+    <div class="content uk-grid">
+        <div class="workspace uk-grid-large uk-width-expand">
+
+    <h1>Abbey</h1>
+
+    <form method="post" action="/login">
+
+        <h2>Login</h2>
+
+        <fieldset>
+
+        <label for="username">Username</label>
+        <input type="text" name="user[username]" id="username" placeholder="Maurits"/>
+
+        <label for="password">Password</label>
+        <input type="password" name="user[password]" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+
+        <input type="submit" name="login" id="login" value="Login"/>
+
+        </fieldset>
+
+        <p>You don't have an account yet? Click <a href="/REGISTER">here</a> to register.</p>
+
+    </form>
+
+        </div>
+    </div>
+</div>
+
+<footer id="footer" class="uk-width-1-1">
+    <p>A Laerolf creation.
+
+    </p>
+
+    <p>
+
+        Find me on
+
+        <a href="https://www.linkedin.com/in/nicolas-floréal-358371ba" target="_blank" title="This is my profile on LinkedIn!">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        |
+        <a href="https://www.facebook.com/AbbeyTheGame" target="_blank" title="OMG! This is Abbey's own page on Facebook!">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+
+    </p>
+</footer>
+
+</body>
+</html>

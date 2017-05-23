@@ -1,0 +1,702 @@
+/*---------------------*/
+/*    HTML ELEMENTS    */
+/*---------------------*/
+
+h2 {
+    margin: 0 0 2% 0;
+}
+
+#loginScreen.container {
+    padding: 5% 10% 10% 10%;
+}
+
+#loginScreen a, #loginScreen a:focus, #naam a, #naam a:focus {
+    text-decoration: underline;
+    background-color: inherit;
+    color: inherit;
+}
+
+#loginScreen a:hover, #naam a:hover {
+    text-decoration: none;
+    background-color: inherit;
+    color: inherit;
+}
+
+#loginScreen label + input{
+    display: block;
+}
+
+#loginScreen input {
+    margin: 0 0 2% 0;
+    border: inherit;
+    padding: inherit;
+    width: inherit;
+    overflow: inherit;
+    box-shadow: inherit;
+}
+
+#loginScreen input:last-child {
+    margin: 2% 0 0 0;
+}
+
+.profileSection {
+    margin:3% 0 3% 0;
+}
+
+.profileSection label + input {
+    display: block;
+}
+
+.profileSection input {
+    margin: 0 0 2% 0;
+}
+
+.profileSection input:last-child {
+    margin: 2% 0 0 0;
+}
+
+.profileSection a:first-child {
+    margin-right: 3%;
+}
+
+html {
+    color: #222;
+}
+
+body {
+    background-image: url("../images/monastery.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#stock h4 {
+    border-bottom: 2px rgb(250, 235, 215) solid;
+}
+
+p {
+    margin: 2% 0 2% 0;
+    font-size: 1rem;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+i {
+    margin-right: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#abbey label {
+    margin-right: 1%;
+    font-weight: bold;
+}
+
+#work label {
+    font-weight: normal;
+}
+
+.button {
+    margin: 0 2% 2% 0;
+    color: rgb(250, 235, 215);
+    background-color: #b09348;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: rgb(250, 235, 215);
+}
+
+#abbey input {
+    color: black;
+    margin-bottom: 2%;
+    border: none;
+    border-bottom: dotted thin black;
+    overflow: hidden;
+    box-shadow: none;
+    padding: 1%;
+}
+
+input[type='text'] {
+    width: 50%;
+    padding: 1%;
+}
+
+input[type='text']:focus, input[type='text']:hover {
+    color: black;
+    margin-bottom: 2%;
+    border: none;
+    border-bottom: dotted thin black;
+    overflow: hidden;
+    box-shadow: none;
+    padding: 1%;
+}
+
+input[type='text']::-webkit-input-placeholder {
+    color: #666666;
+    padding: 1%;
+}
+
+select {
+    width: 50%;
+    padding: 1%;
+    margin-right: 5%;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type='number'] {
+    width: 50%;
+    padding: 1%;
+    display: block;
+    margin-top: 2%;
+}
+
+/*---------------------*/
+/*  REUSABLE CLASSES   */
+/*---------------------*/
+
+.title {
+    display: inline-block;
+    margin-top: 0;
+    color: rgb(250, 235, 215);
+}
+
+.theEnd {
+    font-weight: bold;
+    font-size: large;
+}
+
+.opbrengst {
+    margin: 2% 0 2% 0;
+    background-color: rgb(250, 235, 215);
+    padding: 1% 2% 1% 2%;
+    display: none;
+}
+
+a.active, a:hover, a:focus {
+    color: #b06c3d;
+    background-color: rgb(250, 235, 215);
+}
+
+.button[value='girl'] {
+    background-color: deeppink;
+}
+
+.button[value='girl'].disabled {
+    background-color: hotpink;
+}
+
+.button.disabled, .button[disabled] {
+    opacity: 1;
+}
+
+.button[value='girl'].disabled:hover {
+    background-color: hotpink;
+}
+
+.button.disabled:hover, .button[disabled]:hover {
+    background-color: rgb(250, 235, 215);
+    color: #b06c3d;
+    opacity: 1;
+}
+
+.uk-button-default:focus, .uk-button-default:hover {
+    background-color: rgb(250, 235, 215);
+    color: #b06c3d;
+    opacity: 1;
+}
+
+.button[value='girl']:focus, .button[value='girl']:hover {
+    background-color: hotpink;
+}
+
+.button.disabled:hover, .button[disabled]:hover {
+    background-color: rgb(250, 235, 215);
+    color: #b06c3d;
+    opacity: 1;
+}
+
+.button.chosen {
+    background-color: rgb(250, 235, 215);
+    color: #b06c3d;
+    font-weight: bold;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 2%;
+    background-color: #b09348;
+    color: rgb(250, 235, 215);
+    text-align: center;
+}
+
+.menu a.active, .menu a:hover, .menu a:focus {
+    background-color: rgb(250, 235, 215);
+    color: #b09348;
+}
+
+#secondaryWork, #secondaryBrew {
+    border-bottom: solid rgb(250, 235, 215) 2pt;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+#secondaryWork a, #secondaryBrew a {
+    padding: 1%;
+    margin-right: 2%;
+}
+
+#secondaryWork a:last-child, #secondaryBrew a:last-child {
+    float: none;
+    margin-right: 0;
+}
+
+#main a {
+    width: 100%;
+    margin: 0 auto 10% auto;
+}
+
+#main a:last-child {
+    margin-bottom: 0;
+}
+
+.button {
+    color: rgb(250, 235, 215);
+    display: inline-block;
+    margin: 2% 2% 1% 0;
+    padding: 1%;
+    background-color: #b09348;
+    width: 20%;
+    text-align: center;
+}
+
+.opdrachtKnop, .procesKnop {
+    color: rgb(250, 235, 215);
+    display: inline-block;
+    margin: 2% 2% 1% 0;
+    padding: 1%;
+    background-color: #b09348;
+    width: 20%;
+    text-align: center;
+}
+
+.button:last-child {
+    margin-right: 0;
+}
+
+/*---------------------*/
+/* CONTAINING ELEMENTS */
+/*---------------------*/
+
+fieldset {
+    margin: 2% 0 2% 0;
+}
+
+fieldset:last-child {
+    margin-bottom: 0;
+}
+
+/*.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}*/
+
+.progressbar.completed {
+    background-color: #ae632f;
+    border: solid 1px white;
+}
+
+.inputNumber {
+    margin: 0 2% 0 1%;
+}
+
+.veldWijzigen {
+    display: none;
+    margin-top: 5%;
+}
+
+/*.wellContainer {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 5%;
+    margin: 5% auto 5% auto;
+    background-color: rgba(0, 0, 0, 0.60);
+    border: none;
+}*/
+
+.header {
+    background-color: rgb(0, 0, 0);
+    color: rgb(250, 235, 215);
+    padding: 2% 0;
+}
+
+.content {
+    padding: 2% 0 2% 0;
+    background-color: rgba(232, 232, 232, 0.8);
+}
+
+.workspace {
+    /*overflow: auto;
+    max-height: 80vh;*/
+    padding: 2%;
+}
+
+.workspace > div {
+    display: none;
+}
+
+/*------------------------*/
+/* PAGE SPECIFIC ELEMENTS */
+/*------------------------*/
+
+#offNavButton {
+    border:none;
+    background-color: transparent;
+    color: white;
+}
+
+#offCanvasNav .uk-nav-offcanvas a {
+    background-color: #b09348;
+    color: rgb(250, 235, 215);
+}
+
+#offCanvasNav .uk-nav-offcanvas a.active, #offCanvasNav .uk-nav-offcanvas a:hover, #offCanvasNav .uk-nav-offcanvas a:focus {
+    background-color: rgb(250, 235, 215);
+    color: #b09348;
+}
+
+.uk-nav-offcanvas a {
+    margin: 10% 0;
+}
+
+.uk-nav-offcanvas a:first-child {
+    margin-top: 30%;
+}
+
+.uk-button-default:disabled {
+    background-color: rgb(250, 235, 215);
+    color: #b09348;
+}
+
+#naam, #reputatie, #valuta {
+    display: inline-block;
+    list-style: none;
+}
+
+#reputatie i, #valuta i{
+    display: inline;
+}
+
+#reputatie i::before, #valuta i::before {
+    margin-left: 20%;
+}
+
+#valuta {
+    margin: 0 5% 0 5%;
+}
+
+.progressbar {
+    position: relative;
+    width: 75%;
+    height: 25px;
+    margin: 0 auto 2% auto;
+    display: block;
+    border: none;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.ui-progressbar {
+    border-radius: 0;
+    border: none;
+    background-color: whitesmoke;
+    position: relative;
+    width: 75%;
+    height: 25px;
+    margin: 0 auto 2% auto;
+    display: block;
+}
+
+.ui-widget {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-progressbar .ui-progressbar-value {
+    margin: 0;
+    border-radius: 0;
+}
+
+.ui-progressbar-value {
+    background-color: #ae632f;
+}
+
+.progress-label {
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+}
+
+#work > div {
+    display: none;
+}
+
+#brew > div {
+    display: none;
+}
+
+.storyNavigation {
+    display: block;
+}
+
+.storyNavigationNext > img {
+    width: 5%;
+    margin-left: 90%;
+}
+
+.storyNavigationBack > img {
+    width: 5%;
+    margin-left: 10%;
+}
+
+.processable {
+    color: limegreen;
+}
+
+.notProcessable {
+    color: red;
+}
+
+.fa-5x:before {
+    font-size: 1em;
+}
+
+.scheme .row {
+    margin-bottom: 5%;
+    height: 25%;
+}
+
+.scheme .row:last-child {
+    margin-bottom: 0;
+}
+
+.row > i {
+    padding: 0;
+    margin: 0;
+}
+
+#arrow {
+    text-align: center;
+    padding-top: 12%;
+}
+
+.row .input, .row .output, .row .processor {
+    display: inline-block;
+}
+
+.row .input, .row .output {
+    border: solid black 2pt;
+    border-radius: 5%;
+    padding: 2%;
+    background-color: white;
+}
+
+.row .input p, .row .output p, .row .processor p {
+    display: block;
+    text-align: center;
+}
+
+.row .processor .progressbar {
+    width: 100%;
+}
+
+.row .processor {
+    width: 40%;
+}
+
+.row .processor p {
+    padding: 0 10% 0 10%;
+}
+
+.processRow {
+    margin-bottom: 5%;
+}
+
+.processRow h5 {
+    margin-bottom: 4%;
+}
+
+.processRow button {
+    margin-top: 3%;
+}
+
+#itemToSell {
+    width: 100px;
+    height: 100px;
+    margin: 2%;
+    background-color: ghostwhite;
+    border: solid black 2pt;
+    border-radius: 5%;
+    text-align: center;
+}
+
+#itemToSell p {
+    padding: 40%;
+}
+
+#market > div {
+    margin-bottom: 6%;
+}
+
+#market > div:last-child {
+    margin: 0;
+}
+
+.vendorButton {
+    cursor: pointer;
+    border: black solid 2pt;
+    border-radius: 5%;
+    color: rgb(250, 235, 215);
+    background-color: #b09348;
+    padding: 2% 3%;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.vendorButton:focus, .vendorButton:hover, .vendorButton.active {
+    background-color: rgb(250, 235, 215);
+    color: #b09348;
+}
+
+.vendorButton:last-child {
+    margin: 0;
+}
+
+.inventoryRow {
+    background-color: whitesmoke;
+    border-radius: 2%;
+    border: solid 2px black;
+    padding: 2%;
+    text-align: center;
+}
+
+.inventoryItem {
+    cursor: pointer;
+    padding: 2%;
+    margin: 10px;
+    background-color: ghostwhite;
+    border: solid black 2pt;
+    border-radius: 5%;
+    display: inline-block;
+}
+
+#inventoryItem p {
+    text-align: center;
+}
+
+#message {
+    display: none;
+    background-color: #b09348;
+    color: white;
+    border: 2px solid black;
+    margin: 4% 2%;
+    text-align: center;
+    padding: 1.5%;
+}
+
+/* --- Home --- */
+
+.content.uk-grid, .workspace.uk-grid {
+    margin-right:0;
+    margin-top: 0;
+}
+
+.content.uk-grid-large, .workspace.uk-grid-large {
+    margin-right:0;
+    margin-top: 0;
+}
+
+.uk-nav-offcanvas {
+    list-style: none;
+}
+
+
+footer {
+    padding:1%;
+    background-color: black;
+    color: #b09348;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p:first-child {
+    margin-bottom: 1%;
+}
+
+/*--------------------------*/
+/* MOBILE SPECIFIC ELEMENTS */
+/*--------------------------*/
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 5% 6% 6% 6%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .workspace.uk-grid-large {
+        margin-top: 5%
+    }
+
+    body {
+        /*padding-bottom: 47vh;*/
+    }
+}
+
+@media screen and (min-width: 500px) and(max-width: 680px) {
+
+    body {
+        font-size: 0.5em;
+    }
+
+    header {
+        position: fixed;
+        z-index: 100;
+    }
+
+    .workspace.uk-grid-large {
+        margin-top: 20%
+    }
+
+    #NCR {
+        margin-top: 2%!important;
+    }
+}
